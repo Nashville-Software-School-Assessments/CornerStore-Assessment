@@ -34,6 +34,7 @@ public class CornerStoreApp : WebApplicationFactory<Program>
                 context.Cashiers.RemoveRange(context.Cashiers);
                 context.Categories.RemoveRange(context.Categories);
                 context.Products.RemoveRange(context.Products);
+                context.Orders.RemoveRange(context.Orders);
                 context.SaveChanges();
 
                 var amy = new Cashier { FirstName = "Amy", LastName = "Simpson" };
