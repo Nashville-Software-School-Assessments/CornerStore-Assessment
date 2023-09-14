@@ -70,11 +70,11 @@ public class TestCornerStore
 
         Assert.Equal("Testing", updatedProduct.ProductName);
 
-        //popular
-        var popularProducts = await client.GetFromJsonAsync<List<Product>>("/products/popular");
+        //popular - leaving in the assessment as a challenge, but removing from tests for now
+        // var popularProducts = await client.GetFromJsonAsync<List<Product>>("/products/popular");
 
-        Assert.Equal(5, popularProducts.Count);
-        Assert.Equal("Tuna", popularProducts[0].ProductName);
+        // Assert.Equal(5, popularProducts.Count);
+        // Assert.Equal("Tuna", popularProducts[0].ProductName);
 
     }
 
